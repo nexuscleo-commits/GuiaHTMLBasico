@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Tags HTML para Iniciantes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="https://cdn.pixabay.com/video/2023/07/03/169870-841936961_large.mp4" type="video/mp4">
+    </video>
+    <div id="video-overlay"></div>
+
+    <header>
+        <h1>Guia de Tags HTML para Iniciantes</h1>
+        <p>Um guia de consulta rápida com as tags mais comuns para desenvolvimento web.</p>
+        <button id="theme-switcher">Alternar Tema</button>
+    </header>
+
+    <main>
+        <section id="estrutura">
+            <h2>Estrutura Básica do HTML</h2>
+            <p>A estrutura básica de um documento HTML inclui as seguintes tags principais:</p>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Declara o tipo de documento.</li>
+                <li><code>&lt;html&gt;</code>: Raiz do documento.</li>
+                <li><code>&lt;head&gt;</code>: Contém metadados e links para CSS/JS.</li>
+                <li><code>&lt;title&gt;</code>: O título da página na aba do navegador.</li>
+                <li><code>&lt;body&gt;</code>: Contém o conteúdo visível da página.</li>
+            </ul>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="pt-br"&gt;
+                        &lt;head&gt;
+                            &lt;meta charset="UTF-8"&gt;
+                            &lt;title&gt;Título da Página&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                            &lt;h1&gt;Conteúdo da Página.&lt;/h1&gt;
+                        &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="texto">
+            <h2>Tags de Texto e Formatação</h2>
+            <h1>Isso é um Título Principal &lt;h1&gt;</h1>
+            <h2>Isso é um Subtítulo &lt;h2&gt;</h2>
+            <h3>Isso é um &lt;h3&gt;</h3>
+            <h4>Isso é um &lt;h4&gt;</h4>
+            <h5>Isso é um &lt;h5&gt;</h5>
+            <h6>Isso é um &lt;h6&gt;</h6>
+            <p>
+                Este é um parágrafo de texto, usado para blocos de conteúdo<br>
+                <b>Este texto está em negrito &lt;b&gt;</b><br>
+                <i>este em itálico &lt;i&gt;</i><br>
+                <u>este sublinhado &lt;u&gt;</u><br>
+                Use <strong>texto forte &lt;strong&gt;</strong>para importância<br>
+                <em>texto enfatizado &lt;em&gt;</em> para ênfase<br>
+                <mark>Este texto está marcado &lt;mark&gt;</mark><br>
+            </p>
+            <p>
+                Podemos ter texto <s>riscado &lt;s&gt;</s><br>
+                <ins>texto inserido &lt;ins&gt;</ins><br>
+                <small>pequeno &lt;small&gt;</small><br>
+                <del>texto deletado &lt;del&gt;</del><br>
+            </p>
+            <p>
+                A tag &lt;br&gt; insere uma quebra de linha
+            </p>
+            <pre>
+                <code>&lt;h1&gt;Título Principal&lt;/h1&gt;
+                    &lt;p&gt;
+                        Este é um parágrafo com &lt;strong&gt;texto importante&lt;/strong&gt; e &lt;em&gt;texto com ênfase&lt;/em&gt;.
+                    &lt;/p&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="links">
+            <h2>Links (Âncoras)</h2>
+            <p>Links são criados com a tag <code>&lt;a&gt;</code>:</p>
+            <ul>
+                <li><a href="https://www.google.com.br" target="_blank">Abrir Google em nova aba</a></li>
+                <li><a href="mailto:nexuscleo@gmail.com">Enviar email</a></li>
+                <li><a href="tel:+555496272394">Ligar para um número</a></li>
+                <li><a href="#rodape">Ir para o rodapé da página</a></li>
+            </ul>
+            <pre>
+                <code>&lt;!-- Link para um site externo que abre em nova aba --&gt;
+                    &lt;a href="https://www.google.com" target="_blank"&gt;Abrir Google em nova aba&lt;/a&gt;
+                </code>
+            </pre>
+        </section>
+
+        <section id="listas">
+            <h2>Listas</h2>
+            <article>
+                <h3>Lista Não Ordenada &lt;ul&gt;</h3>
+                <ul>
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li>Item C</li>
+                </ul>
+<pre><code> &lt;ul&gt;
+    &lt;li&gt;Item A&lt;/li&gt;
+    &lt;li&gt;Item B&lt;/li&gt;
+    &lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+            </article>
+            <article>
+                <h3>Lista Ordenada &lt;ol&gt;</h3>
+                <ol>
+                    <li>Primeiro item</li>
+                    <li>Segundo item</li>
+                    <li>Terceiro item</li>
+                </ol>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Primeiro item&lt;/li&gt;
+    &lt;li&gt;Segundo item&lt;/li&gt;
+    &lt;li&gt;Terceiro item&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+            </article>
+        </section>
+
+        <section id="midia">
+            <h2>Mídia</h2>
+            <article>
+                <h3>Imagens &lt;img&gt;</h3>
+                <p>A tag <code>&lt;img&gt;</code> exibe uma imagem. O atributo <code>alt</code> é crucial para acessibilidade,<br> caso a imagem não seja carregada.</p>
+                <img src="./image/HTML-Basic.jpg" alt="Código HTML e CSS" width="500">
+                <pre>
+                    <code>&lt;img src="./img/imagem.jpg" alt="Plano de fundo com código HTML e CSS de exemplo."&gt;</code>
+                </pre>
+            </article>
+
+            <article>
+                <h3>Figura e Legenda &lt;figure&gt;e &lt;figcaption&gt;</h3>
+                <figure>
+                    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Casas Trulli na Itália" width="500">
+                    <figcaption>A tag <code>&lt;figcaption&gt;</code> fornece uma legenda para a <code>&lt;figure&gt;</code>.<br>
+                    Alberobello é uma comuna italiana da região da Puglia, província de Bari, com cerca de 10.855 habitantes. Estende-se por uma área de 40 km², tendo uma densidade populacional de 271 hab/km². Faz fronteira com Castellana Grotte, Fasano, Locorotondo, Martina Franca, Monopoli, Mottola, Noci.
+                    </figcaption>
+                </figure>
+
+<pre><code>&lt;figure&gt;
+    &lt;img src="imagem.jpg" alt="Descrição"&gt;
+    &lt;figcaption&gt;Alberobello é uma comuna italiana da região da Puglia,<br>
+    província de Bari, com cerca de 10.855 habitantes. Estende-se por uma área de 40 km²,<br>
+    tendo uma densidade populacional de 271 hab/km². Faz fronteira com Castellana Grotte,<br>
+    Fasano, Locorotondo, Martina Franca, Monopoli, Mottola, Noci..&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+            </article>
+
+            <article>
+                <h3>Conteúdo Embutido &lt;iframe&gt;</h3>
+                <p>Use <code>&lt;iframe&gt;</code> para incorporar conteúdo de outros sites, como vídeos do YouTube.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/33zLViryXzE?si=SJT-yKwuE-n4AYqf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </article>
+        </section>
+
+        <section id="tabelas">
+            <h2>Tabelas &lt;table&gt;</h2>
+            <p>Tabelas são ótimas para exibir dados tabulares.</p>
+            <pre><code>&lt;table&gt;
+    &lt;thead&gt; &lt;!-- Cabeçalho --&gt;
+        &lt;tr&gt; &lt;!-- Linha --&gt;
+            &lt;th&gt;Coluna 1&lt;/th&gt; &lt;!-- Célula de cabeçalho --&gt;
+            &lt;th&gt;Coluna 2&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt; &lt;!-- Corpo --&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Dado 1&lt;/td&gt; &lt;!-- Célula de dado --&gt;
+            &lt;td&gt;Dado 2&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alimentação</td>
+                        <td>R$30,00</td>
+                        <td>01/10/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Diversão</td>
+                        <td>R$50,00</td>
+                        <td>02/10/2024</td>
+                    </tr>
+                    <tr>
+                        <td>Transporte</td>
+                        <td>R$15,00</td>
+                        <td>03/10/2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="formularios">
+            <h2>Formulários &lt;form&gt;</h2>
+            <p>Formulários coletam dados do usuário. A tag <code>&lt;label&gt;</code> é importante para acessibilidade.</p>
+            <pre><code>&lt;form action="/enviar" method="post"&gt;
+    &lt;div&gt;
+        &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+        &lt;input type="text" id="nome" name="usuario_nome"&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;
+        &lt;input type="email" id="email" name="usuario_email"&gt;
+    &lt;/div&gt;
+    &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="carros">Escolha um carro:</label>
+                    <select id="carros" name="carros">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi" selected>Audi</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Opções:</label>
+                    <input type="radio" id="opcao1" name="opcoes" value="opcao1">
+                    <label for="opcao1">Opção 1</label>
+                    <input type="radio" id="opcao2" name="opcoes" value="opcao2">
+                    <label for="opcao2">Opção 2</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito os termos de uso</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </form>
+        </section>
+
+        <section id="semantica">
+            <h2>Tags Semânticas de Layout</h2>
+            <p>Use estas tags para dar mais significado à estrutura da sua página.</p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: O cabeçalho da página ou de uma seção.</li>
+                <li><code>&lt;main&gt;</code>: O conteúdo principal e único da página.</li>
+                <li><code>&lt;section&gt;</code>: Uma seção temática dentro do conteúdo.</li>
+                <li><code>&lt;article&gt;</code>: Um bloco de conteúdo autônomo (ex: post de blog).</li>
+                <li><code>&lt;aside&gt;</code>: Conteúdo lateral, como uma barra de links.</li>
+                <li><code>&lt;footer&gt;</code>: O rodapé da página ou de uma seção.</li>
+                <li><code>&lt;nav&gt;</code>: Um container para links de navegação.</li>
+            </ul>
+            <pre><code>&lt;body&gt;
+    &lt;header&gt;...&lt;/header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+    &lt;main&gt;
+        &lt;section&gt;...&lt;/section&gt;
+    &lt;/main&gt;
+    &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;</code></pre>
+        </section>
+
+        <section id="interatividade-js">
+            <h2>Exemplos de Interatividade com JavaScript</h2>
+            <article>
+                <h3>Alterar Conteúdo com JS</h3>
+                <div id="minhaDiv" class="box-exemplo">Olá, DevClub!</div>
+                <button onclick="mudarTexto()">Mudar Texto e Cor</button>
+                <pre><code>&lt;!-- HTML --&gt;
+&lt;div id="minhaDiv"&gt;Olá!&lt;/div&gt;
+&lt;button onclick="mudarTexto()"&gt;Mudar&lt;/button&gt;
+
+&lt;!-- JavaScript --&gt;
+function mudarTexto() {
+    document.getElementById('minhaDiv').textContent = 'Texto Mudou!';
+}</code></pre>
+            </article>
+            <article>
+                <h3>Alterar Estilo de um Elemento</h3>
+                <p>Este é um <span id="meuSpan">texto com ID</span> dentro de um parágrafo.</p>
+                <button onclick="mudarCorSpan()">Mudar cor do span</button>
+            </article>
+        </section>
+
+    </main>
+
+    <footer id="rodape">
+        <p>&copy;2025 NexusCleo.</p>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="scrollTopBtn" title="Voltar ao topo">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
